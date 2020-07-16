@@ -42,13 +42,17 @@ class GoodsController extends Controller
             'stok' => 'required',
             'namabarang' => 'required',
             'hargabarang' => 'required',
-            'jumlah' => 'required'
+            'jumlah' => 'required',
+            'keterangan' => 'required',
+            'email' => 'required'
         ]);
 
         $goods->stok =$request->input('stok');
         $goods->namabarang =$request->input('namabarang');
         $goods->hargabarang =$request->input('hargabarang');
         $goods->jumlah =$request->input('jumlah');
+        $goods->keterangan =$request->input('keterangan');
+        $goods->email =$request->input('email');
 
         $goods->save();
 
@@ -91,7 +95,9 @@ class GoodsController extends Controller
             'stok' => $request->stok,
             'namabarang' => $request->namabarang,
             'hargabarang' => $request->hargabarang,
-            'jumlah' => $request->jumlah
+            'jumlah' => $request->jumlah,
+            'keterangan' => $request->keterangan,
+            'email' => $request->email
         ]);
         
         return redirect ('/index');
