@@ -19,6 +19,12 @@
 
         <label for="jumlah">jumlah</label>
         <input type="text" name="jumlah" value="{{ $id->jumlah }}" class="form-control"  id="jumlah" required >
+
+        <label for="keterangan">keterangan</label>
+        <input type="text" name="keterangan" value="{{ $id->keterangan }}" class="form-control"  id="keterangan" required >
+
+        <label for="email">email</label>
+        <input type="text" name="email" value="{{ $id->email }}" class="form-control"  id="email" required >
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

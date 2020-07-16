@@ -12,6 +12,8 @@
       <th scope="col">Nama Barang</th>
       <th scope="col">Harga barang</th>
       <th scope="col">jumlah</th>
+      <th scope="col">keterangan</th>
+      <th scope="col">email</th>
       <th scope="col">Aksi</th>
     </tr>
   </thead>
@@ -24,6 +26,9 @@
       <td>{{ $good->namabarang}}</td>
       <td>{{ $good->hargabarang}}</td>
       <td>{{ $good->jumlah}}</td>
+      <td>{{ $good->keterangan}}</td>
+      <td>{{ $good->email}}</td>
+    
       <td>
       <a href="/edit/{{$good->id}}" class="btn btn-warning btn-sm">Edit</a>
       <form action="/delete/{{$good->id}}" method="post">
@@ -34,14 +39,14 @@
       </td>
     </tr>
   <?php $no++ ?>
+
   @endforeach
-  </tbody>
+  <tbody>
+
 </table>
-      
-      <td>
-
-      </td>
-
+         </td>
+</td>
+    
     </tr>
   </tbody>
 </table>
