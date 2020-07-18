@@ -78,8 +78,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-    <i class="fas fa-apple-alt fa-2x"></i>
-      <span class="brand-text font-weight-light">Penjualan</span>
+      <span class="brand-text font-weight-light">Data Penjualan</span>
     </a>
 
     <!-- Sidebar -->
@@ -87,7 +86,7 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-        <i class="fas fa-anchor"></i>
+        
         </div>
         <div class="info">
           <a href="#" class="d-block">Admin</a>

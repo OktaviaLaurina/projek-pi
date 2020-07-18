@@ -56,7 +56,7 @@ class GoodsController extends Controller
 
         $goods->save();
 
-        return redirect ('/index');
+        return redirect ('/index')->with('alert','data berhasil ditambah');
     }
 
     /**
@@ -100,7 +100,7 @@ class GoodsController extends Controller
             'email' => $request->email
         ]);
         
-        return redirect ('/index');
+        return redirect ('/index')->with('alert','data berhasil diedit');
     }
 
     /**
@@ -112,7 +112,7 @@ class GoodsController extends Controller
     public function destroy(Good  $good)
     {
        Good::destroy( $good->id);
-       return redirect ('/index');
+       return redirect ('/index')->with('alert','data berhasil dihapus');
     }
 
 }

@@ -1,0 +1,43 @@
+<body>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome to E-Commerce</h1>
+					</header>
+					<div class="flex">
+						<div>
+							<span ><img src="{{asset('image/petani1.jpg')}}" alt="" width="150" height="150" > </span>
+							<h3>PETANI</h3>
+							
+						</div>
+
+						<div>
+							<span > <img src="{{asset('image/petanii.jpg')}}" alt="" width="150" height="150" ></span>
+							<h3>INDONESIA</h3>
+						
+						</div>
+
+						<div>
+							<span > <img src="{{asset('image/petani2.jpg')}}" alt="" width="150" height="150" ></span>
+							<h3>BERJAYA</h3>
+							
+						</div>
+
+					</div>
+
+					<footer>
+						<a href="{{ route('login') }}" class="button">Login</a>
+						<a href="{{ route('register') }}" class="button">Register</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="{{ asset('js/jquery.min.js') }}"></script>
+			<script src="{{ asset('js/skel.min.js') }}"></script>
+			<script src="{{ asset('js/util.js') }}"></script>
+			<script src="{{ asset('js/main.js') }}"></script>
+
+	</body>

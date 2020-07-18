@@ -4,6 +4,12 @@
 
 @section('content')
 
+@if (session('alert'))
+  <div class="alert alert-success">
+    {{session('alert')}}
+  </div>
+@endif
+
 <table class="table">
   <thead class="thead-dark">
     <tr>
@@ -31,11 +37,34 @@
     
       <td>
       <a href="/edit/{{$good->id}}" class="btn btn-warning btn-sm">Edit</a>
-      <form action="/delete/{{$good->id}}" method="post">
-        @method('delete')
-        @csrf
-        <input type="submit" value="Hapus" class="btn btn-danger btn-sm">
-        </form>
+       <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete">
+                  delete
+                    </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Hapus...?</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <form method="POST" class="d-inline" action="delete/{{ $good->id }}">
+                              @csrf
+                              <input type="hidden" value="DELETE" name="_method">
+                              <input type="submit" value="Hapus" class="btn btn-danger btn-sm">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
       </td>
     </tr>
   <?php $no++ ?>
