@@ -42,47 +42,22 @@
   <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('image/petani2.jpg');">
     <div class="container position-relative">
       <h1>Welcome to E-commerce</h1>
+    
 	  
 	  
 	  <a href="{{ route('login') }}" class="btn-get-started scrollto">Login</a>
-	  <a href="{{ route('register') }}s" class="btn-get-started scrollto">Registrasi</a>
+	  <a href="{{ route('register') }}" class="btn-get-started scrollto">Register</a>
 
     </div>
   </section><!-- End Hero -->
 
-<main id="main">
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center justify-content-center" style="background-image: url('image/petani2.jpg');">
+    <div class="container position-relative">
+      
 
- 
-      <div class="container">
-
-        <div class="row my-2">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{asset('image/petani1.jpg')}}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{asset('image/petani1.jpg')}}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{asset('image/petani1.jpg')}}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{asset('image/petani1.jpg')}}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{asset('image/petani1.jpg')}}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="{{asset('image/petani1.jpg')}}" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
+      </section><!-- End Hero -->
+       
 </div>
 
   <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
