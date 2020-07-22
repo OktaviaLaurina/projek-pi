@@ -31,11 +31,13 @@
     
       <td>
       <a href="/edit/{{$good->id}}" class="btn btn-warning btn-sm">Edit</a>
-      <form action="/delete/{{$good->id}}" method="post">
-        @method('delete')
-        @csrf
-        <input type="submit" value="Hapus" class="btn btn-danger btn-sm">
-        </form>
+      <form method="POST" class="d-inline" action="{{url('delete', $good->id)}}">
+          {{ method_field('delete') }}
+          @csrf
+          <button onclick="return confirm ('Hapus???')" class="btn btn-danger btn-sm">
+            Hapus
+          </button>
+      </form>
       </td>
     </tr>
   <?php $no++ ?>
